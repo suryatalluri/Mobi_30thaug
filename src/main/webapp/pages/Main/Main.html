@@ -7,7 +7,7 @@
         <wm-page-content columnwidth="12" name="page_content1">
             <wm-fileupload name="fileupload1" contenttype="image" service="FileService" operation="uploadFile"></wm-fileupload>
             <wm-calendar name="calendar1"></wm-calendar>
-            <wm-chart type="Area" title="Area Chart" iconclass="fa fa-area-chart" name="chart3" dataset="bind:Variables.liveVariable1.dataSet" xaxisdatakey="name" yaxisdatakey="deptId" customcolors="bind:Variables.staticVariable1.dataSet.dataValue"></wm-chart>
+            <wm-chart type="Area" title="Area Chart" iconclass="fa fa-area-chart" name="chart4" dataset="bind:Variables.liveVariable1.dataSet" xaxisdatakey="budget" yaxisdatakey="budget" groupby="budget" aggregation="maximum" aggregationcolumn="budget"></wm-chart>
         </wm-page-content>
     </wm-content>
     <wm-mobile-tabbar dataset="home,music,edit" name="mobile_tabbar1"></wm-mobile-tabbar>

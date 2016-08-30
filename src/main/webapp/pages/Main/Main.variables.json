@@ -146,7 +146,7 @@
       "tableType" : "TABLE",
       "primaryFields" : [ "deptId" ]
     },
-    "bindCount" : 2,
+    "bindCount" : 3,
     "tableName" : "DEPARTMENT",
     "tableType" : "TABLE",
     "properties" : [ ],
