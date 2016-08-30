@@ -18,6 +18,13 @@
                     <exclude>**/*.java</exclude>
                 </excludes>
             </resource>
+            <resource>
+                <filtering>true</filtering>
+                <directory>services/hrdb/src</directory>
+                <excludes>
+                    <exclude>**/*.java</exclude>
+                </excludes>
+            </resource>
         </resources>
         <finalName>Mobi_30thaug</finalName>
         <filters>
@@ -87,6 +94,7 @@
                         <configuration>
                             <sources>
                                 <source>services/FileService/src</source>
+                                <source>services/hrdb/src</source>
                             </sources>
                         </configuration>
                     </execution>
@@ -262,6 +270,11 @@
             <artifactId>servlet-api</artifactId>
             <version>2.5</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.hsqldb</groupId>
+            <artifactId>hsqldb</artifactId>
+            <version>2.3.3</version>
         </dependency>
     </dependencies>
     <dependencyManagement>
