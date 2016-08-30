@@ -11,6 +11,13 @@
                 <filtering>true</filtering>
                 <directory>src/main/resources</directory>
             </resource>
+            <resource>
+                <filtering>true</filtering>
+                <directory>services/FileService/src</directory>
+                <excludes>
+                    <exclude>**/*.java</exclude>
+                </excludes>
+            </resource>
         </resources>
         <finalName>Mobi_30thaug</finalName>
         <filters>
@@ -78,7 +85,9 @@
                             <goal>add-source</goal>
                         </goals>
                         <configuration>
-                            <sources/>
+                            <sources>
+                                <source>services/FileService/src</source>
+                            </sources>
                         </configuration>
                     </execution>
                 </executions>
